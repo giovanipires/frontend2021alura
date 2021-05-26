@@ -1,49 +1,127 @@
-.banner{
-	width: 100%;
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
 }
 
-.principal {
-	background: #CCCCCC;
-	padding: 30px;
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
 }
 
-.text-align-center {
-	text-align: center;
-	font-size: 18px;
-	font-weight: bolder;
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
-em strong {
-	color: red;
-	font-size: 20px;
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-.servico{
-	vertical-align: baseline;
-	padding: 20px;
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
 }
 
-.servico ul{
-	display: inline-block;
-	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
 }
 
-.servico li {
-	font-style: italic;
+.produto {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
-.bannerServico{
-	width: 50%;
+.produto li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
 }
 
-.footer {
-   position: sticky;
-   padding: 5px;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #CCCCCC;
-   text-align: center;
+.produto li:hover {
+    border-color: #C78C19;
+}
+
+.produto li:active {
+    border-color: #088C19;    
+}
+
+.produto li:hover h2 {
+    font-size: 34px;
+}
+
+.produto h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-preco {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 5%;
+}
+
+.produto-descricao {
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    background: #000000;
+    padding: 40px 0;
+}
+
+footer p {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+form {
+    width: 940px;
+    margin: 40px auto;
+}
+
+form label {
+    display: block;
+    font-size: 25px;
+    color: #A7A8A9;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form input {
+    display: block;
+    border-color: #A7A8A9;
+    border-radius: 5px;
+    width: 50%;
+    height: 30px;
+}
+
+#botao {
+    margin: 40px 0;
+    width: 15%;
+    background-color: #0091DA;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+#botao:hover {
+    width: 16%;
+    height: 33px;
+    background-color: #C78C19;
+    color: #FFFFFF;
 }
