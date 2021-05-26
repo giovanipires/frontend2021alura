@@ -95,24 +95,40 @@ form {
     margin: 40px auto;
 }
 
-form label {
+form label, form p, .select {
     display: block;
-    font-size: 25px;
+    font-size: 20px;
+    margin: 0 0 10px;
     color: #A7A8A9;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
 }
 
-form input {
+.input-padrao {
     display: block;
-    border-color: #A7A8A9;
-    border-radius: 5px;
+    margin: 0 0 20px;
+    padding: 10px 25px;
     width: 50%;
-    height: 30px;
+    border-color: #A7A8A9;
+    border-radius: 5px;    
+}
+
+.select select {
+    display: block;
+    margin: 20px 0 0;
+    padding: 10px 25px;
+    color: #0091DA;
+    font-size: 18px;
+    font-style: italic;
+    width: 55%;
+
+}
+
+.checkbox, .select p {
+    margin: 20px 0;
 }
 
 #botao {
-    margin: 40px 0;
+    margin: 20px 0;
     width: 15%;
     background-color: #0091DA;
     color: #FFFFFF;
