@@ -9,7 +9,7 @@
 <body>
 	<header>
 		<div class="caixa">
-		    <h1><img src="src/logo.png"></h1>
+		    <h1><img src="src/logo.png" alt="Logo da barbearia"></h1>
 
 		    <nav>
 		        <ul>
@@ -23,43 +23,70 @@
 	<main>
 		<form>
 			<label for="nome">Nome:</label>
-			<input class="input-padrao" type="text" name="nome" id="nome" placeholder="seu nome completo">
+			<input class="input-padrao" type="text" name="nome" id="nome" placeholder="seu nome completo" required>
 
 			<label for="email">e-mail:</label>
-			<input class="input-padrao" type="email" name="email" id="email" placeholder="email@email.com">
+			<input class="input-padrao" type="email" name="email" id="email" placeholder="seumail@dominio.com" required>
 
 			<label for="telefone">Telefone:</label>
-			<input class="input-padrao" type="text" name="telefone" id="telefone" placeholder="(21) 99999-9999">
+			<input class="input-padrao" type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
 
 			<label for="msg">Mensagem:</label>
-			<textarea class="input-padrao" type="text" name="msg" id="msg" cols="70" rows="10" placeholder="digite sua mensagem aqui..."></textarea>
+			<textarea class="input-padrao" type="text" name="msg" id="msg" cols="70" rows="10" placeholder="digite sua mensagem aqui..." required></textarea>
 
-			<div>
-				<p>Como prefere nosso contato?</p>
+			<fieldset>
+				<legend>Como prefere nosso contato?</legend>
 				<label for="radio-email"><input type="radio" value="email" name="contato" id="radio-email">e-mail</label>
 				<label for="radio-tel"><input type="radio" value="telefone" name="contato" id="radio-tel">Telefone</label>
-				<label for="radio-msg"><input type="radio" value="msg" name="contato" id="radio-msg">WhatsApp</label>
-			</div>
+				<label for="radio-msg"><input type="radio" value="msg" name="contato" id="radio-msg" checked>WhatsApp</label>
+			</fieldset>
 
-			<div class="select">
-				<p>Qual horário prefere ser atendido?</p>
-				<select>
+			<fieldset class="select">
+				<legend>Qual horário prefere ser atendido?</legend>
+				<select required>
 					<option default>Selecione...</option>
 					<option>Manhã</option>
 					<option>Tarde</option>
 					<option>Noite</option>
 				</select>
-			</div>
+			</fieldset>
 
-
-			<label class="checkbox"><input type="checkbox" name="checkbox"> Gostaria de receber nossas novidades por email?</label>
+			<label class="checkbox"><input type="checkbox" name="checkbox" checked> Gostaria de receber nossas novidades por email?</label>
 
 			<input id="botao" type="submit" name="enviar" value="Enviar">
 
 		</form>
+
+		<fieldset class="tabela-horario">
+			<legend>Horário de funcionamento:</legend>
+			<table>
+			    <thead>
+			        <tr>
+			            <th>Dia</th>
+			            <th>Horário</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td>Segunda</td>
+			            <td>8h ~ 20h</td>
+			        </tr>
+			        <tr>
+			            <td>Quarta</td>
+			            <td>8h ~ 20h</td>
+			        </tr>
+			        <tr>
+			            <td>Sexta</td>
+			            <td>8h ~ 20h</td>
+			        </tr>
+			    </tbody>
+			</table>
+		</fieldset>
+		
+
 	</main>
 	<footer>
-		<img src="src/logo-branco.png" alt="Logo rodapé">
+		<img src="src/logo-branco.png" alt="Logo da barbearia">
 		<p>&copy; Copyright Barbearia Alura – 2019</p>		
 	</footer>
 </body>

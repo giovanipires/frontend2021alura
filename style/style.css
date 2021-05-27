@@ -95,7 +95,7 @@ form {
     margin: 40px auto;
 }
 
-form label, form p, .select {
+form label, form legend, .select {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
@@ -129,15 +129,41 @@ form label, form p, .select {
 
 #botao {
     margin: 20px 0;
-    width: 15%;
-    background-color: #0091DA;
+    padding: 15px 0;
+    width: 25%;
+    background-color: orange;
     color: #FFFFFF;
     font-size: 18px;
+    transition: 1s all;
 }
 
 #botao:hover {
-    width: 16%;
-    height: 33px;
-    background-color: #C78C19;
-    color: #FFFFFF;
+    background-color: #D76B00;
+    transform: scale(1.2);
+}
+
+.tabela-horario {
+    margin: 20px 480px 40px;
+}
+
+.tabela-horario legend {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #A7A8A9;
+}
+
+table {
+    width: 55%;
+}
+
+thead {
+    background: #BBBBBB;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #BBBBBB;
+    padding: 8px 15px;
+    text-align:  center;
 }
