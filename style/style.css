@@ -1,4 +1,8 @@
 /* css da página de produto */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
     background: #BBBBBB;
     padding: 20px 0;
@@ -180,7 +184,9 @@ td, th {
 .titulo-principal {
     text-align: center;
     font-size: 2em;
-    margin: 0 0 1em;
+    margin: 1em 0 1em;
+    clear: left;
+
 }
 
 .principal p{
@@ -195,4 +201,9 @@ td, th {
     font-style: italic;
 }
 
+.utensilios {
+    width: 175px;
+    float:  left;
+    margin: 0 20px 0;
+}
 
