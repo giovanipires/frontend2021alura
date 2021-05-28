@@ -257,6 +257,10 @@ td, th {
     font-weight: bold;
 }
 
+.itens:before {
+    content: "✃ ";
+}
+
 .imagem-servico {
     width: 60%;
 }
